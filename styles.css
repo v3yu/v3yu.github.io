@@ -2,16 +2,18 @@
     --Sidebar-Width: 450px;
     --NavLinks-Spacing: 0px;
     --Body-Font-Size: 12px;
-    --SmallCaps-Font-Family: "LT Emphasis";
+    --SmallCaps-Font-Family: "Work Sans";
 }
 
 body {
+    font-family: Work Sans;
     margin: 0;
     background-color: #020202;
     background-image: url(http://64.media.tumblr.com/59925c26ac14bb36554827d2c396a3a2/33dde9333027022b-4e/s2048x3072/1c9cb3b0d1c220e8ddb92500e853937c44fb370c.png);
     background-attachment: fixed;
     overflow: hidden;
     overscroll-behavior-y: none;
+
 }
 
 #sidebar {
@@ -20,7 +22,7 @@ body {
     left: 0;
     width: var(--Sidebar-Width);
     height: 100vh;
-    background-image: url('https://64.media.tumblr.com/3b65e4b93481be156e995c5c26378b4e/33dde9333027022b-55/s2048x3072/e60036ce30e38eb2a3803dce2a03364ff4c076e4.jpg');
+    background-image: url("/bannerraw.jpg");
     background-size: cover;
     background-position: bottom left;
     background-color: #000007;
@@ -106,19 +108,39 @@ body {
 }
 
 #maincontent {
-        position: absolute;
-        top: 0;
-        margin-top: 50px;
-        left: 0;
-        margin-left: calc(var(--Sidebar-Width) + 100px);
-        width: calc(100% - var(--Sidebar-Width) - 200px);
-        padding: var(--Post-Padding);
-        background: #070707;
-        border: 1px solid #222222;
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    left: 0;
+    margin-left: calc(var(--Sidebar-Width) + 100px);
+    width: calc(100% - var(--Sidebar-Width) - 200px);
+    padding: var(--Post-Padding);
+    background: #070707;
+    border: 1px solid #222222;
 }
- 
+
 #maincontent p {
-   display: block;
-   margin:1em;
-   color: #a9a9a9;
+    display: block;
+    margin: 1em;
+    color: #a9a9a9;
 }
+
+#maincontent h1 {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161616;
+    border: 1px solid #222;
+}
+
+#maincontent span {
+    display: block;
+    text-align: center;
+    color: #a9a9a9;
+    margin: 0.5em;
+    font-size: large;
+    text-transform: uppercase;
+}
+
