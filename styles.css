@@ -1,7 +1,7 @@
 :root {
-    --Sidebar-Width: 450px;
+    --Sidebar-Width: 500px;
     --NavLinks-Spacing: 0px;
-    --Body-Font-Size: 12px;
+    --Body-Font-Size: 13px;
     --SmallCaps-Font-Family: "Work Sans";
 }
 
@@ -72,9 +72,9 @@ body {
 #links span {
     display: block;
     font-family: var(--SmallCaps-Font-Family);
-    font-size: 11px;
+    font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.3px;
     color: #c8bdbb;
 }
 
@@ -107,26 +107,35 @@ body {
     z-index: 13;
 }
 
-#maincontent {
-    position: absolute;
+#maincontainer {
+    display:flex;
+    flex-direction: column;
+    position: relative;
     top: 0;
     margin-top: 50px;
     margin-bottom: 50px;
     left: 0;
     margin-left: calc(var(--Sidebar-Width) + 100px);
     width: calc(100% - var(--Sidebar-Width) - 200px);
-    padding: var(--Post-Padding);
+}
+
+.maincontent {
+    display: flex;
+    margin-bottom:5px;
+    flex-direction: column;
+    padding: 5px;
     background: #070707;
     border: 1px solid #222222;
 }
 
-#maincontent p {
-    display: block;
+.maincontent p {
+    line-height: 150%;
     margin: 1em;
     color: #a9a9a9;
+    font-size:small;
 }
 
-#maincontent h1 {
+.maincontent h1 {
     margin: 10px;
     display: flex;
     align-items: center;
@@ -135,12 +144,20 @@ body {
     border: 1px solid #222;
 }
 
-#maincontent span {
-    display: block;
+.maincontent span {
     text-align: center;
     color: #a9a9a9;
     margin: 0.5em;
     font-size: large;
     text-transform: uppercase;
+}
+
+.maincontent a {
+    color:#e95746;
+}
+
+.maincontent a:hover {
+    color:#fa8072;
+    
 }
 
