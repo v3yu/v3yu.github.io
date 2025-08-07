@@ -108,7 +108,7 @@ body {
 }
 
 #maincontainer {
-    display:flex;
+    display: flex;
     flex-direction: column;
     position: relative;
     top: 0;
@@ -121,7 +121,7 @@ body {
 
 .maincontent {
     display: flex;
-    margin-bottom:5px;
+    margin-bottom: 5px;
     flex-direction: column;
     padding: 5px;
     background: #070707;
@@ -132,7 +132,7 @@ body {
     line-height: 150%;
     margin: 1em;
     color: #a9a9a9;
-    font-size:small;
+    font-size: small;
 }
 
 .maincontent h1 {
@@ -153,11 +153,45 @@ body {
 }
 
 .maincontent a {
-    color:#e95746;
+    color: #e95746;
 }
 
 .maincontent a:hover {
-    color:#fa8072;
-    
+    color: #fa8072;
+
 }
 
+#time_box {
+    width: 120px;
+    height: 88px;
+    padding: 20px;
+    padding-left: 30px;
+    border-radius: 0px 0px 3px 3px;
+    border: 1px solid #222222;
+    background-color: #070707;
+    left: 40px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, .10);
+    top: 30px;
+    font-size: 12px;
+    color:#444444;
+    text-transform: uppercase;
+    text-align: left;
+    position: fixed;
+    z-index: 99;
+}
+#clock {
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #555555;
+    font-family: 'khula', sans-serif;
+}
+
+#clock_wrap {
+    display: inline-block;
+    position: fixed;
+    font-size: 10px;
+    margin-left: 0px;
+    text-align: left;
+}
