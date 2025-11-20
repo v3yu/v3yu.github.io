@@ -18,33 +18,38 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="time.js"></script>
 </head>
+
 <body>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <!--time box-->
+    
     <div id="time_box">
+        <div class="clocksideline">
         <div id="clock_wrap">
             <p><strong>IT IS CURRENTLY:</strong></p>
             <div id="clock"></div>
             <p><strong>in Hong Kong</strong></p>
         </div>
     </div>
+    </div>
     <!--start sidebar-->
     <div id="sidebar">
         <div id="sidebarcontainer">
-            <div id="links">
-                <a
-                    href="https://docs.google.com/document/d/1fkK-94ClY7A7sSwBRTTi4wC57CuEcdj6ocTXJTp37kw/edit?usp=sharing">
-                    <span>Resume</span></a>
-                <a href="https://github.com/v3yu">
-                    <span>GitHub</span>
-                </a>
-                <a href="mailto:v3yu@ucsd.edu">
-                    <span>Email</span>
-                </a>
-                <a href="https://www.artstation.com/kybcr">
-                    <span>Portfolio</span></a>
+            <div class="linkstopline">
+                <div id="links">
+                    <a href="https://docs.google.com/document/d/1fkK-94ClY7A7sSwBRTTi4wC57CuEcdj6ocTXJTp37kw/edit?usp=sharing">
+                        <span>Resume</span></a>
+                    <a href="https://github.com/v3yu">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="mailto:v3yu@ucsd.edu">
+                        <span>Email</span>
+                    </a>
+                    <a href="https://www.artstation.com/kybcr">
+                        <span>Portfolio</span></a>
+                </div>
             </div>
             <div id="desc">
                 <p id="description">
@@ -61,14 +66,57 @@
         <div class="maincontent">
             <h1><span>Introduction</span></h1>
             <p>
-                Vivian is a 3rd-year Math-CS student at UC San Diego (UCSD), based in San Diego and Hong Kong.<br>
-                Her research interests include computer vision and vision-language models (VLM).<br>
+                Vivian is a 4th-year Math-CS student at UC San Diego (UCSD), based in San Diego and Hong Kong.<br>
+                Her research interests include computer graphics, particularly methods for simulating physics animation
+                on stylized non-realistic 2D illustrations.<br>
                 Vivian currently works as an instructional assistant for UCSD's Mathematics Department where she teaches
                 lower-division calculus, and as a research intern at the Halicioğlu Data Science Institute (HDSI).<br>
                 In her spare time, she likes to <a href="https://www.artstation.com/kybcr">draw</a> and <a
                     href="https://www.instagram.com/ucsdwushu">practice wushu</a>.
 
             </p>
+        </div>
+        <div class="maincontent">
+            <h1><span>Research Interests</span></h1>
+            <p>
+                <a href="https://www.youtube.com/watch?v=uNbuHqf7BJ8">This</a> is a VTuber model. It is a 2D (yes, 2D!)
+                illustration that has been cut into a couple hundred
+                (perhaps even over a thousand) layers, and each layer's animation behavior in every possible
+                orientation has been manually tuned by the artist. Also, this animates in real-time using face tracking.
+                As you can imagine, this is incredibly labor intensive and expensive.
+            </p>
+            <p>
+                Simulation of classical physics is very well-studied in 3D. You can set two keyframes for an object, and
+                a system of
+                equations will fill in the intermediate positions based on some parameters like material, and weight.
+            </p>
+            <p>
+                2D illustrations of 3D objects clearly don't behave according to classical physics.
+                Live2D artists generally just rely on their 'feeling' of how an illustrated object ought to behave when
+                shaken or dropped or rotatated.
+            </p>
+            <p>
+                My ultimate goal is to design non-photorealistic animation techniques, both 2D and 3D, that are
+                differentiable, fast, and deterministic;
+                taking a step back from black box generative AI.
+            </p>
+            <p> In the pursuit of this goal, I am interested in: </p>
+            <ul>
+                <li> Variants of physically-based techniques (like inverse kinematics, particle systems) that can
+                    simulate non-realistic, stylized
+                    movements according to the <a
+                        href="https://miro.medium.com/v2/resize:fit:1400/1*8l6p1CWmhyyoSEXYa7EYUQ.gif">12 principles of
+                        animation</a>
+                <li> Machine learning approaches to non-photorealistic rendering and animation, <a
+                        href="https://www.fxguide.com/fxfeatured/ink-lines-and-machine-learning/">as seen in Into The
+                        Spiderverse</a>
+                <li> Neural fields. Keyframes, material, weight etc. can be parameters for coordinate-based neural
+                    networks, which can do the heavy lifting for us.
+            </ul>
+            <p>
+                Please see my resume for details about research experience, publications, and relevant coursework.
+            </p>
+
         </div>
         <div class="maincontent">
             <h1><span>Projects</span></h1>
@@ -78,8 +126,6 @@
                 <a href=https://github.com/Team-Black-Hat-White-Hat/Card-Game-Project>Roguelike Deck-Building Game
                 </a><br>
                 Live2D VTuber Model <br>
-                What To Call Your Chinese Relatives Tool <br>
-                Programming Languages Otome Game
 
             </p>
         </div>

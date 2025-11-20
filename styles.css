@@ -11,7 +11,6 @@ body {
     background-color: #020202;
     background-image: url(http://64.media.tumblr.com/59925c26ac14bb36554827d2c396a3a2/33dde9333027022b-4e/s2048x3072/1c9cb3b0d1c220e8ddb92500e853937c44fb370c.png);
     background-attachment: fixed;
-    overflow: hidden;
     overscroll-behavior-y: none;
 
 }
@@ -57,12 +56,26 @@ body {
     padding: 7px;
     background: rgba(0, 0, 7, calc(1 - 0.4));
     backdrop-filter: blur(3px);
-    border: 1px solid #383838;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: #222;
     box-sizing: border-box;
     max-width: 100%;
     overflow: hidden;
     transition: 0.25s ease-in-out;
     text-decoration: none;
+}
+
+.linkstopline {
+    border-style: solid;
+    border-color: #e95746;
+    border-width: 5px 0px 0px 0px;
+}
+
+.clocksideline {
+    border-style: solid;
+    border-color: #e95746;
+    border-width: 0px 0px 2px 2px;
 }
 
 #links a:hover {
@@ -135,6 +148,12 @@ body {
     font-size: small;
 }
 
+.maincontent ul {
+    line-height: 150%;
+    margin: 1em;
+    color: #a9a9a9;
+    font-size: small;
+}
 .maincontent h1 {
     margin: 10px;
     display: flex;
@@ -172,7 +191,7 @@ body {
     left: 40px;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, .10);
     top: 30px;
-    font-size: 12px;
+    font-size: 15px;
     color:#444444;
     text-transform: uppercase;
     text-align: left;
@@ -182,7 +201,7 @@ body {
 #clock {
     text-align: left;
     letter-spacing: 1px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     color: #555555;
     font-family: 'khula', sans-serif;
